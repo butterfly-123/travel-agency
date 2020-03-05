@@ -17,7 +17,9 @@ import Info from './components/views/Info/Info';
 import NotFound from './components/views/NotFound/NotFound';
 
 import parseTrips from './utils/parseTrips';
-import {setMultipleStates} from './redux/globalRedux';
+import { setMultipleStates } from './redux/globalRedux';
+
+import styles from './styles/App.scss';
 
 class App extends React.Component {
   static propTypes = {
@@ -42,14 +44,19 @@ class App extends React.Component {
     return (
       <BrowserRouter>
         <MainLayout>
-          <Switch location={location}>
+          <Switch 
+            atEnter={{ opacity: 0, marginTop: 200 }}
+            atLeave={{ opacity: 0, marginTop: -200 }}
+            atActive={{ opacity: 1, marginTop: 0 }}
+            className={styles.switchWrapper}
+            location={location}>
             <Route exact path='/' component={Home} />
             <Route exact path='/trips' component={Trips} />
             {/* TODO - add more routes for other views */}
             <Route exact path='/countries' component={Countries} />
-            <Route exact path='/country' component={Country} />
+            <Route exact path='/country/:id' component={Country} />
             <Route exact path='/regions' component={Regions} />
-            <Route exact path='/trip' component={Trip} />
+            <Route exact path='/trip/:id' component={Trip} />
             <Route exact path='/info' component={Info} />
             <Route path='*' component={NotFound} />
           </Switch>

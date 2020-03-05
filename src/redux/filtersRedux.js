@@ -10,11 +10,15 @@ const createActionName = name => `app/${reducerName}/${name}`;
 
 // action types
 export const CHANGE_PHRASE = createActionName('CHANGE_PHRASE');
+
 // TODO - add other action types
+
 
 // action creators
 export const changeSearchPhrase = payload => ({ payload, type: CHANGE_PHRASE });
+
 // TODO - add other action creators
+
 
 // reducer
 export default function reducer(statePart = [], action = {}) {
