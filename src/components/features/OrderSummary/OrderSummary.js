@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 class OrderSummary extends React.Component {
   static propTypes = {
-    tripCost: PropTypes.func,
+    tripCost: PropTypes.string,
   }
 
   render() {
@@ -13,7 +13,7 @@ class OrderSummary extends React.Component {
     return (
       <h2 className={styles.component}>
         Total:
-        <strong> ${tripCost} </strong>
+        <strong> {tripCost} </strong>
       </h2>
     );
   }

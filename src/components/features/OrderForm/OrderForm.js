@@ -6,7 +6,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid';
 class OrderForm extends React.Component {
 
   static propTypes = {
-    tripCost: PropTypes.func,
+    tripCost: PropTypes.node,
   }
 
   render() {
