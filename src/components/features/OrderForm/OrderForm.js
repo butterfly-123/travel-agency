@@ -3,12 +3,12 @@ import OrderSummary from '../OrderSummary/OrderSummary';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class OrderForm extends React.Component {
-  render() {
+  render(cost) {
     return (
       <Grid>
         <Row>
           <Col xs={12}>
-            <OrderSummary />
+            <OrderSummary tripCost={cost} />
           </Col>
         </Row>
       </Grid>
