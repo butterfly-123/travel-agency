@@ -14,6 +14,8 @@ class OrderSummary extends React.Component {
     const { tripCost, options } = this.props;
     const totalPrice = calculateTotal(formatPrice(tripCost), options);
 
+    console.log(totalPrice);
+
     return (
       <h2 className={styles.component}>
         Total:
