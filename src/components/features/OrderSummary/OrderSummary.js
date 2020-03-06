@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './OrderSummary.scss';
 import PropTypes from 'prop-types';
-import {calculateTotal} from '../../../utils/calculateTotal';
-import {formatPrice} from '../../../utils/formatPrice';
+import { calculateTotal } from '../../../utils/calculateTotal';
+import { formatPrice } from '../../../utils/formatPrice';
 
 class OrderSummary extends React.Component {
   static propTypes = {
     tripCost: PropTypes.string,
-    options: PropTypes.string,
+    options: PropTypes.object,
   }
 
   render() {
