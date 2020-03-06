@@ -11,7 +11,7 @@ class OrderSummary extends React.Component {
   }
 
   render() {
-    const {tripCost, options} = this.props;
+    const { tripCost, options } = this.props;
     const totalPrice = calculateTotal(formatPrice(tripCost), options);
 
     return (
