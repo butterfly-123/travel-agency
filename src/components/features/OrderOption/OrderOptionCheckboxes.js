@@ -1,10 +1,9 @@
 import React from 'react';
 import styles from './OrderOption.scss';
 
-const OrderOptionCheckboxes = () => {
+const OrderOptionCheckboxes = () => (
   <div className={styles.checkboxes}>
     OrderOptionCheckboxes
-  </div>;
-};
-
+  </div>
+);
 export default OrderOptionCheckboxes;

@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './OrderOption.scss';
 
-const OrderOptionIcons = () => {
+const OrderOptionIcons = () => (
   <div className={styles.icon}>
-    OrderOptionIcons
-  </div>;
-};
+    {/* {required ? '' : (
+      <option key='null' value=''>---</option>
+    )} */}
+  </div>
+);
 
 export default OrderOptionIcons;

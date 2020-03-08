@@ -1,7 +1,10 @@
 import React from 'react';
+import styles from './OrderOption.scss';
 
-const OrderOptionNumber = () => {
-  <div>OrderOptionNumber</div>;
-};
+const OrderOptionNumber = () => (
+  <div className={styles.input}>
+    OrderOptionNumber
+  </div>
+);
 
 export default OrderOptionNumber;
