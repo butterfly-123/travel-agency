@@ -19,7 +19,7 @@ class OrderSummary extends React.Component {
     return (
       <h2 className={styles.component}>
         Total:
-        <strong> ${totalPrice} </strong>
+        <strong> $ {totalPrice} </strong>
       </h2>
     );
   }
