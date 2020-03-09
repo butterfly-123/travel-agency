@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './OrderOption.scss';
 import OrderOptionDropdown from './OrderOptionDropdown';
 import OrderOptionIcons from './OrderOptionIcons';
@@ -31,6 +32,13 @@ const OrderOption = ({name, type, id, setOrderOption, ...otherProps}) => {
       </div>
     );
   }
+};
+
+OrderOption.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.string,
+  id: PropTypes.string,
+  setOrderOption: PropTypes.func,
 };
 
 export default OrderOption;
