@@ -2,7 +2,27 @@ import React from 'react';
 import styles from './OrderOption.scss';
 import PropTypes from 'prop-types';
 
-const OrderOptionNumber = (limits, currentValue, setOptionValue) => (
+// setOptionValue={value => setOrderOption({ [id]: value })}
+// aneta={0}
+
+
+
+// <OptionComponent
+//   {...otherProps}
+//   setOptionValue={value => setOrderOption({ [id]: value })}
+//   aneta={0}
+
+// />
+
+// const params = {
+//   {...otherProps}
+//   setOptionValue: {value => setOrderOption({ [id]: value })},
+//   aneta: 0
+// };
+
+// OrderOptionNumber(params,);
+
+const OrderOptionNumber = ({limits, currentValue, setOptionValue}) => (
   <div className={styles.number}>
     <input type='number'
       className={styles.inputSmall}

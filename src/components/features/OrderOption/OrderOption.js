@@ -28,6 +28,8 @@ const OrderOption = ({name, type, id, setOrderOption, ...otherProps}) => {
         <OptionComponent
           {...otherProps}
           setOptionValue={value => setOrderOption({ [id]: value })}
+          aneta={0}
+
         />
       </div>
     );
