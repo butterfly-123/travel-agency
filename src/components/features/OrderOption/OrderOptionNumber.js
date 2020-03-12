@@ -24,7 +24,8 @@ import PropTypes from 'prop-types';
 
 const OrderOptionNumber = ({limits, currentValue, setOptionValue}) => (
   <div className={styles.number}>
-    <input type='number'
+    <input 
+      type='number'
       className={styles.inputSmall}
       value={currentValue}
       min={limits.min}
